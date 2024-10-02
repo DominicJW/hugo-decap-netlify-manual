@@ -1,0 +1,1 @@
+# hugo-decap-netlify-manual
