@@ -1,0 +1,18 @@
+.front-image {
+    width: 100%;
+    height: auto;
+}
+.portfolio-image {
+    width: 100%;
+    height: auto;
+}
+/*@media (min-width: 768px) {
+    .front-image {
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+    .portfolio-image {
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+}*/

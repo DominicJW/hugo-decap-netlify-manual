@@ -1,0 +1,10 @@
+{{ define "main" }}
+    <h1> this is .Title {{.Title}}</h1>
+      <p> this is .Description {{ .Description }}</p>
+      <p>Try do images</p>
+        {{ range .Params.images }}
+            <img src="{{ . }}" alt="Image" class ="portfolio-image">
+        {{ end }}
+      <p>this below is .Content</p>
+      {{ .Content }}
+{{ end }}
