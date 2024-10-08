@@ -1,14 +1,17 @@
+{{ define "main" }}
 <p>This is the list</p>
 
 	{{ range .Pages }}
-      {{ .Title }}
         {{ if .Params.images }}
             <img src="{{(path.Base .File.Dir)}}/{{index .Params.images 0}}" alt="Image" class=front-image>
+            
     	{{ else }}
         	<p>No images available.</p>
 		{{ end }}
+    <a href="{{(path.Base .File.Dir)}}"> {{.Params.title}}</a>
 		<br>
    {{ end }}
 
-<link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
 
+
+{{ end }}
