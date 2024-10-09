@@ -1,17 +1,37 @@
 {{ define "main" }}
-<p>This is the list</p>
-
+    <div class="row">
 	{{ range .Pages }}
+        <div class="col-12 col-md-4">
+        <figure>
         {{ if .Params.images }}
-            <img src="{{(path.Base .File.Dir)}}/{{index .Params.images 0}}" alt="Image" class=front-image>
-            
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    
+    {{$foo := (path.Base .File.Dir)}}
+    {{$first := true}}
+    {{ range where .Params.images "thumbnail" true }}
+      <div class="carousel-item {{ if $first }}active{{ $first = false }}{{ end }}">
+      <img src="{{$foo}}/{{.image}}" alt="Image" class="img-fluid">
+    </div>
+    {{end}}
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
     	{{ else }}
         	<p>No images available.</p>
 		{{ end }}
-    <a href="{{(path.Base .File.Dir)}}"> {{.Params.title}}</a>
-		<br>
+            <a href="{{(path.Base .File.Dir)}}"><figcaption> {{.Params.title}} </figcaption> </a>
+            </figure>
+        </div>
    {{ end }}
-
-
+    </div>
 
 {{ end }}

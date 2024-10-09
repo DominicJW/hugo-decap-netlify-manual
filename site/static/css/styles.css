@@ -1,18 +1,36 @@
-.front-image {
+/*.front-image {
     width: 100%;
     height: auto;
 }
 .portfolio-image {
     width: 100%;
     height: auto;
-}
-/*@media (min-width: 768px) {
-    .front-image {
-        width: calc(50% - 10px);
-        margin: 5px;
-    }
-    .portfolio-image {
-        width: calc(50% - 10px);
-        margin: 5px;
-    }
 }*/
+
+/*@media (min-width: 100px) {*/
+
+/*.front-image {
+    width: calc(35% - 10px);
+    margin: 5px;
+}*/
+
+/*.portfolio-image {
+    width: calc(50% - 10px);
+    margin: 5px;
+}*/
+
+
+
+.image-container {
+    max-height: 100vh;
+}
+
+/*issue means if one wants to zoom in then you have to screenshot and then zoom -will do for now*/
+.image-container img {
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 90vh; /* Ensure images do not exceed viewport height */
+            object-fit: contain; /* Scale images to fit within the container */
+}
+
+/*}*/

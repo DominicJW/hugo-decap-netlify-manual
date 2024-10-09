@@ -1,10 +1,16 @@
 {{ define "main" }}
     <h1> this is .Title {{.Title}}</h1>
       <p> this is .Description {{ .Description }}</p>
-      <p>Try do images</p>
+      <div class="row h-100">
         {{ range .Params.images }}
-            <img src="{{ . }}" alt="Image" class ="portfolio-image">
+            <div class="col-12 image-container">
+            <figure>
+            <img src="{{ .image }}" alt="Image" class ="img-fluid">
+            <figcaption> {{.title}} {{.description}}</figcaption>
+          </figure>
+            </div>
         {{ end }}
+      </div>
       <p>this below is .Content</p>
       {{ .Content }}
 {{ end }}
