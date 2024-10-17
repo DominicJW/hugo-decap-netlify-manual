@@ -1,16 +1,20 @@
 <!doctype html>
 <html lang="{{ $.Site.Language.Lang }}">
     {{ partial "head" . }}
-    
-    <body style= "background-color: #f1dfb7;">
+    <body 
+        style = "background-image: url('/img/examplebg.jpg');
+        background-size: cover;"
+    >
+    <div style="
+        background-color: #545c48;
+        background-size: cover;
+        margin : 5%;
+        "
+    >
     {{ partial "nav" . }}
-
     {{ block "main" . }}{{ end }}
-
-
     {{ partial "footer" . }}
-
-
+    </div>
 
   </body>
 </html>
