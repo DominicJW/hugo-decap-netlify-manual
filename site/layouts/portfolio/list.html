@@ -1,37 +1,39 @@
 {{ define "main" }}
-    <div class="row">
-	{{ range .Pages }}
-        <div class="col-12 col-md-4">
-        <figure>
-        {{ if .Params.images }}
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    
-    {{$foo := (path.Base .File.Dir)}}
-    {{$first := true}}
-    {{ range where .Params.images "thumbnail" true }}
-      <div class="carousel-item {{ if $first }}active{{ $first = false }}{{ end }}">
-      <img src="{{$foo}}/{{.image}}" alt="Image" class="img-fluid">
-    </div>
-    {{end}}
-  </div>
+<div class="row">
+{{$r:=0}}
 
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+{{ range sort .Pages "Title" "desc"}}
+	{{ $r = add $r 1 }}
+	<div class="col-12 col-md-4">
+	<figure>
+	{{ if .Params.images }}
+		<div id="carousel{{$r}}" class="carousel slide">
+		<div class="carousel-inner">    
+		{{$foo := (path.Base .File.Dir)}}
+		{{$first := true}}
+		{{ range where .Params.images "thumbnail" true }}
+			<div class="carousel-item {{ if $first }}active{{ $first = false }}{{ end }}">
+			<div class="image-container">
+			<img src="{{$foo}}/{{.image}}" alt="Image" class="img-fluid">
+			</div>
+			</div>
+		{{end}}
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carousel{{$r}}" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carousel{{$r}}" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+		</button>
+		</div>
+	{{ else }}
+			<p>No images available.</p>
+	{{ end }}
+	<a href="{{(path.Base .File.Dir)}}"><figcaption> {{.Params.title}} </figcaption> </a>
+	</figure>
+	</div>
+{{ end }}
 </div>
-    	{{ else }}
-        	<p>No images available.</p>
-		{{ end }}
-            <a href="{{(path.Base .File.Dir)}}"><figcaption> {{.Params.title}} </figcaption> </a>
-            </figure>
-        </div>
-   {{ end }}
-    </div>
-
 {{ end }}
