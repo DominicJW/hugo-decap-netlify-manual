@@ -27,3 +27,65 @@
   width: auto; /* set the width to auto to maintain aspect ratio */
 }
 
+
+
+
+  .navbar {
+    padding: 1rem 2rem; /* Adjust the top/bottom and left/right padding */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.25rem; /* Increase font size */
+    padding: 1rem 2rem; /* Adjust padding for nav links */
+  }
+
+
+  .navbar-brand {
+    font-size: 1.25rem; /* Increase font size */
+    padding: 1rem 2rem; /* Adjust padding for nav links */
+  }
+
+  /* styles.css */
+a {
+    color: black ; /* Change to your desired color */
+    text-decoration: none ; /* Remove underline */
+
+}
+
+
+/* styles.css */
+.form-group {
+    background-color: #545c48; /* Light blue background */
+    border-color: #007bff; /* Blue border */
+    color: #333; /* Dark text color */
+}
+.form-group:focus {
+    background-color: #545c48; /* Lighter blue on focus */
+    border-color: #0056b3; /* Darker blue on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional shadow effect */
+}
+
+
+.form-control {
+  background-color: #746848 ;
+  border-color: #FFFFFF ;
+  color: #333 ;
+}
+.form-control:focus {
+  background-color: #bfb193 ;
+  border-color: #FFFFFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+.btn  {
+  background-color: #746848 ;
+  border-color: #FFFFFF ;
+  color: #333 ;
+}
+
+.btn:hover  {
+  background-color: #545c48 ;
+  border-color: #FFFFFF ;
+  color: #333 ;
+}

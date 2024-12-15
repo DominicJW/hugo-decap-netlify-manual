@@ -66,6 +66,10 @@ collections: # A list of collections the CMS should be able to edit
         name: "body"
         widget: "markdown"
         required: false
+      - label: "Price"
+        name: "price"
+        widget: "text"
+        required: false
       - label: "Images"
         name: "images"
         widget: "list"

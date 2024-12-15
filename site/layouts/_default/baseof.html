@@ -2,8 +2,9 @@
 <html lang="{{ $.Site.Language.Lang }}">
     {{ partial "head" . }}
     <body 
-        style = "background-image: url('/img/examplebg.jpg');
-        background-size: cover;"
+        style = "background-image: url('/img/examplebg.svg');
+        background-repeat: repeat;
+        background-size: 100%;"
     >
     <div style="
         background-color: #545c48;
@@ -11,7 +12,15 @@
         margin : 5%;
         "
     >
+
+    
     {{ partial "nav" . }}
+        <div style="
+        background-color: #545c48;
+        background-size: cover;
+        margin : 5%;
+        "
+    >
     {{ block "main" . }}{{ end }}
     {{ partial "footer" . }}
     </div>

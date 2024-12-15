@@ -31,7 +31,7 @@
 	{{ else }}
 			<p>No images available.</p>
 	{{ end }}
-	<a href="{{(path.Base .File.Dir)}}"><figcaption> {{.Params.title}} </figcaption> </a>
+	<a href="{{(path.Base .File.Dir)}}"><figcaption> {{.Params.title}}  £{{.Params.price}}</figcaption> </a>
 	</figure>
 	</div>
 {{ end }}
