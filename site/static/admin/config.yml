@@ -94,3 +94,16 @@ collections: # A list of collections the CMS should be able to edit
               name: "thumbnail"
               widget: "boolean"
 
+
+
+  - name: "pages" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "page" # Used in the UI, ie.: "New Post"
+    file: "site/content/_index.md" 
+    fields: 
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      -label: "helloworld2"
+       name: "helloworld2"
+       widget: "string"
+       
