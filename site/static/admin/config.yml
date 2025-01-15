@@ -91,11 +91,8 @@ collections: # A list of collections the CMS should be able to edit
           - label: "Thumbnail"
             name: "thumbnail"
             widget: "boolean"
-
-
-
-  - name: "pages" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "page" # Used in the UI, ie.: "New Post"
+  - name: "pages"
+    label: "page"
     file: "site/content/_index.md" 
     fields: 
       - label: "Title"
