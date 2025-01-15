@@ -94,7 +94,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Pages"
     files:
-      - file: "_index.md" # Changed to match your file name
+      - file: "site/content/_index.md" # Changed to match your file name
         label: "Homepage"
         name: "homepage"
         fields:
