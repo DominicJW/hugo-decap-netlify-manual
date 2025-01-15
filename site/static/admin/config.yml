@@ -92,12 +92,11 @@ collections: # A list of collections the CMS should be able to edit
             name: "thumbnail"
             widget: "boolean"
   - name: "pages"
-    label: "page"
-    file: "site/content/_index.md" 
-    fields: 
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "helloworld2"
-        name: "helloworld2"
-        widget: "string"
+    label: "Pages"
+    files:
+      - file: "_index.md" # Changed to match your file name
+        label: "Homepage"
+        name: "homepage"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "helloworld2", name: "helloworld2", widget: "string"}
