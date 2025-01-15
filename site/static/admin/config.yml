@@ -98,6 +98,6 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Title"
         name: "title"
         widget: "string"
-      -label: "helloworld2"
+      - label: "helloworld2"
         name: "helloworld2"
         widget: "string"
