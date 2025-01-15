@@ -44,49 +44,53 @@ collections: # A list of collections the CMS should be able to edit
           - label: "Thumbnail"
             name: "thumbnail"
             widget: "boolean"
-
-
-- name: "store" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "site/content/store" 
-    path: "{{slug}}/index"
-    create: true 
-    fields: 
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Publish Date"
-        name: "date"
-        widget: "datetime"
-      - label: "Intro Blurb"
-        name: "description"
-        widget: "text"
-        required: false
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        required: false
-      - label: "Price"
-        name: "price"
-        widget: "text"
-        required: false
-      - label: "Images"
-        name: "images"
-        widget: "list"
-        required: false
-        fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            required: true
-          - label: "Title"
-            name: "title"
-            widget: "text"
-            required: false
-          - label: "Description"
-            name: "description"
-            widget: "text"
-            required: false
-          - label: "Thumbnail"
-            name: "thumbnail"
+          - label: "HomeThumbnail"
+            name: "homethumbnail"
             widget: "boolean"
+          
+
+  - name: "store" # Used in routes, ie.: /admin/collections/:slug/edit
+      label: "Post" # Used in the UI, ie.: "New Post"
+      folder: "site/content/store" 
+      path: "{{slug}}/index"
+      create: true 
+      fields: 
+        - label: "Title"
+          name: "title"
+          widget: "string"
+        - label: "Publish Date"
+          name: "date"
+          widget: "datetime"
+        - label: "Intro Blurb"
+          name: "description"
+          widget: "text"
+          required: false
+        - label: "Body"
+          name: "body"
+          widget: "markdown"
+          required: false
+        - label: "Price"
+          name: "price"
+          widget: "text"
+          required: false
+        - label: "Images"
+          name: "images"
+          widget: "list"
+          required: false
+          fields:
+            - label: "Image"
+              name: "image"
+              widget: "image"
+              required: true
+            - label: "Title"
+              name: "title"
+              widget: "text"
+              required: false
+            - label: "Description"
+              name: "description"
+              widget: "text"
+              required: false
+            - label: "Thumbnail"
+              name: "thumbnail"
+              widget: "boolean"
+

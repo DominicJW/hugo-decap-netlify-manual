@@ -2,6 +2,7 @@
 title: mfadegreeshow
 date: 2016-12-17T15:04:10.000Z
 description: introduction hh
+home: true
 images:
   - description: Description for image 1
     image: a1.jpg
