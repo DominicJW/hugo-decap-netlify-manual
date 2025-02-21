@@ -1,10 +1,13 @@
 {{ define "main" }}
+<div style="margin : 5%;text-align: center;">
+
 <div class="row">
 {{$r:=0}}
 
 {{ range sort .Pages "Title" "desc"}}
 	{{ $r = add $r 1 }}
 	<div class="col-12 col-md-4">
+	<a href="{{(path.Base .File.Dir)}}">
 	<figure>
 	{{ if .Params.images }}
 		<div id="carousel{{$r}}" class="carousel slide">
@@ -31,10 +34,11 @@
 	{{ else }}
 			<p>No images available.</p>
 	{{ end }}
-	<a href="{{(path.Base .File.Dir)}}"><figcaption> {{.Params.title}}  £{{.Params.price}}</figcaption> </a>
+		<figcaption style="margin-top: 5%;font-size: 20px"> {{.Params.title}}  £{{.Params.price}}</figcaption> 
 	</figure>
+	</a>
 	</div>
 {{ end }}
 </div>
-
+</div>
 {{ end }}

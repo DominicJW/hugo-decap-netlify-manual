@@ -31,18 +31,18 @@
 
 
   .navbar {
-    padding: 1rem 2rem; /* Adjust the top/bottom and left/right padding */
+    padding: 0.25rem 0.25rem; /* Adjust the top/bottom and left/right padding */
   }
 
   .navbar-nav .nav-link {
-    font-size: 1.25rem; /* Increase font size */
-    padding: 1rem 2rem; /* Adjust padding for nav links */
+    font-size: 1.5rem; /* Increase font size */
+    padding: 0rem 0rem; /* Adjust padding for nav links */
   }
 
 
   .navbar-brand {
-    font-size: 1.25rem; /* Increase font size */
-    padding: 1rem 2rem; /* Adjust padding for nav links */
+    font-size: 2rem; /* Increase font size */
+    padding: 1rem 1rem; /* Adjust padding for nav links */
   }
 
   /* styles.css */
@@ -55,37 +55,59 @@ a {
 
 /* styles.css */
 .form-group {
-    background-color: #545c48; /* Light blue background */
-    border-color: #007bff; /* Blue border */
-    color: #333; /* Dark text color */
+    /*
+    background-color: #545c48;
+    border-color: #007bff; 
+    color: #333; 
+    */
 }
 .form-group:focus {
-    background-color: #545c48; /* Lighter blue on focus */
-    border-color: #0056b3; /* Darker blue on focus */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional shadow effect */
+  /*
+    background-color: #545c48;
+    border-color: #0056b3; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    */
 }
-
 
 .form-control {
-  background-color: #746848 ;
-  border-color: #FFFFFF ;
+  background-color: #857b71;
+  border-color: #000000 ;
+  /*
   color: #333 ;
+  */
 }
 .form-control:focus {
-  background-color: #bfb193 ;
-  border-color: #FFFFFF;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  background-color: #b3a58b;
+  border-color: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  /*
+  */
 }
 
 
 .btn  {
-  background-color: #746848 ;
-  border-color: #FFFFFF ;
+  background-color:#857b71 ;
+  
+  border-color: #000000 ;
   color: #333 ;
+  width : 50%;
 }
 
 .btn:hover  {
-  background-color: #545c48 ;
-  border-color: #FFFFFF ;
+  background-color: #717B85;
+  border-color: #000000 ;
   color: #333 ;
 }
+
+.btn:active  {
+  background-color: #FFFFFF;
+  border-color: #000000 ;
+  color: #333 ;
+}
+
+.btn:focus  {
+  background-color: #717B85;
+  border-color: #000000 ;
+  color: #333 ;
+}
+
