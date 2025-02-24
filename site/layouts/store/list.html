@@ -6,7 +6,7 @@
 
 {{ range sort .Pages "Title" "desc"}}
 	{{ $r = add $r 1 }}
-	<div class="col-12 col-md-4">
+	<div class="col-12 col-lg-4">
 	<a href="{{(path.Base .File.Dir)}}">
 	<figure>
 	{{ if .Params.images }}
