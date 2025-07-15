@@ -61,5 +61,5 @@ content: Lorem ipsum odor amet, consectetuer adipiscing elit. Elementum metus
   tristique. Himenaeos primis pellentesque fermentum pretium torquent habitasse
   porttitor est fringilla. Pretium enim efficitur donec torquent lobortis. Velit
   pellentesque aliquet integer morbi mattis.
-image: img/a1.jpg
+image: img/kennedy-drake-a-land-of-austerity-with-hope-for-prosperity-01.jpg
 ---
