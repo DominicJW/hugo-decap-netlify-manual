@@ -1,5 +1,5 @@
 ---
-title: 7 Take A Seat (2021)
+title: Take A Seat (2021)
 date: 2016-12-17T15:04:10.000Z
 description: introduction hh
 images:
