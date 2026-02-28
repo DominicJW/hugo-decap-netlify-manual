@@ -111,3 +111,18 @@ a {
   color: #333 ;
 }
 
+@media (min-width: 1px) {
+html { font-size: 2rem; } /* smallest screens*/
+}
+
+@media (min-width: 992px) {
+html { font-size: 1rem; } /* default 16px → change to desired base */
+}
+
+p {padding-left: 5%;
+  padding-right: 5%;
+}
+
+h1 {padding-left: 5%;
+  padding-right: 5%;
+}
