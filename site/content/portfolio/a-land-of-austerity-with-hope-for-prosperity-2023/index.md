@@ -5,7 +5,7 @@ images:
   - image: kennedy-drake-a-land-of-austerity-with-hope-for-prosperity-01.jpg
     thumbnail: true
   - image: kennedy-drake-a-land-of-austerity-with-hope-for-prosperity-02.jpg
-    thumbnail: false
+    thumbnail: true
   - image: kennedy-drake-a-land-of-austerity-with-hope-for-prosperity-03.jpg
-    thumbnail: false
+    thumbnail: true
 ---
