@@ -6,7 +6,7 @@ images:
   - image: art-for-all-2025-lino-print.jpg
     thumbnail: true
   - image: pxl_20250311_122348616.mp.jpg
-    thumbnail: false
+    thumbnail: true
   - image: pxl_20250311_122315761.mp.jpg
-    thumbnail: false
+    thumbnail: true
 ---
